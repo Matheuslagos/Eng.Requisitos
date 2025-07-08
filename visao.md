@@ -72,16 +72,33 @@ Esse projeto pretende desenvolver um e-commerce voltado para venda de frutas e v
 
 7. **Visão geral do produto:**
 
+   A plataforma tem como objetivo disponibilizar um sistema completo de e-commerce especializado na comercialização de frutas, com foco em usabilidade, escalabilidade e segurança. O sistema será desenvolvido com uma arquitetura modular, visando performance e facilidade de manutenção, e contará com funcionalidades voltadas à gestão de produtos, pedidos, usuários e logística de entrega.
+
    **Recursos Principais:**
 
-      - Catálogo de Produtos: O site deve apresentar um catálogo completo de frutas disponíveis para compra, com descrições, imagens e preços.
-      - Pedido de Compras: Os usuários devem ser capazes de adicionar produtos ao pedido de compras, ajustar as quantidades e finalizar suas compras de forma conveniente.
-      - Checkout e Pagamento: Integração com métodos de pagamento seguros para facilitar a conclusão das transações.
-      - Gerenciamento de Conta: Os usuários devem poder criar e gerenciar suas contas, incluindo informações de perfil e histórico de pedidos.
-      - Pesquisa e Filtros: Funcionalidades de pesquisa avançada e filtros para facilitar a localização de produtos desejados.
-      - Entrega Programada: Opção de agendamento de entrega, permitindo que os clientes escolham a data e o horário de entrega.
-      - Notificações por E-mail/SMS/Telegram: Comunicação automatizada para atualizar os clientes sobre o status dos pedidos e promoções.
-      - Suporte ao Cliente: Mecanismo para lidar com perguntas, reclamações e feedback dos clientes.
+      -Catálogo de Produtos
+Implementação de um módulo de catálogo dinâmico com suporte a CRUD completo para produtos. Cada item exibirá nome, descrição, imagem, preço unitário, categoria e status de disponibilidade. O sistema deverá permitir fácil integração com um backend para atualização em tempo real.
+
+   -Gestão de Pedidos e Carrinho de Compras
+Funcionalidade de carrinho persistente com suporte a múltiplas operações: adicionar, remover, editar quantidades e calcular totais parciais. Integração com o módulo de pedidos para submissão, armazenamento e rastreamento do status em tempo real.
+
+   -Checkout e Integração com Gateways de Pagamento
+Implementação de processo de checkout com validação de dados, cálculo de frete (se aplicável) e integração com provedores de pagamento (ex: Stripe, PayPal, Pix) utilizando APIs seguras (HTTPS, tokens e autenticação).
+
+   -Gerenciamento de Contas de Usuário
+Sistema de autenticação (login/cadastro) com criptografia de senhas (ex: bcrypt). Área de perfil para gerenciamento de dados pessoais, endereços, preferências e visualização do histórico de pedidos.
+
+   -Pesquisa Avançada e Filtros Dinâmicos
+Ferramentas de busca com suporte a autocomplete, pesquisa por palavras-chave e filtros combináveis (categoria, faixa de preço, disponibilidade, etc.). Implementação otimizada para performance com indexação via banco de dados ou mecanismo de busca dedicado (ex: Elasticsearch).
+
+   -Agendamento de Entrega
+Sistema de agendamento de entregas baseado em calendário e faixas de horário configuráveis, com verificação de disponibilidade por região e controle de capacidade logística.
+
+   -Sistema de Notificações
+Módulo de notificações assíncronas para envio automático de atualizações de pedido, promoções e lembretes via múltiplos canais (e-mail, SMS, Telegram). Integração com serviços externos via APIs (ex: Twilio, SendGrid, Telegram Bot API).
+
+   -Central de Suporte ao Cliente
+Implementação de uma interface para suporte ao usuário com formulário de contato, sistema de tickets ou chatbot. Possibilidade de integração com plataformas de atendimento (ex: Zendesk, Freshdesk).
   
    **Interfaces com Outros Aplicativos:**
       - Integração com Plataformas de Pagamento: Conexão com serviços de pagamento online Pagseguro.
