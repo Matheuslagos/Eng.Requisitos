@@ -15,3 +15,6 @@
 | RQ11 | Cadastrar funcionário            | Funcional      | Média      | Validado   | Cliente    |
 | RQ12 | Aprovar pedido                   | Funcional      | Alta       | Validado     | Equipe     |
 | RQ13 | Gerar lista para cotação         | Funcional      | Alta       | Validado     | Usuário    |
+
+
+<img width="730" height="509" alt="image" src="https://github.com/user-attachments/assets/444df9fb-d52e-43b6-9cc7-6df56d3b5fe3" />
